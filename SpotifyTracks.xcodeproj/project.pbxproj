@@ -16,6 +16,7 @@
 		4D5C8F5D28ADCC640001C729 /* SpotifyTracksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5C8F5C28ADCC640001C729 /* SpotifyTracksTests.swift */; };
 		4D5C8F6728ADCC640001C729 /* SpotifyTracksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5C8F6628ADCC640001C729 /* SpotifyTracksUITests.swift */; };
 		4D5C8F6928ADCC640001C729 /* SpotifyTracksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5C8F6828ADCC640001C729 /* SpotifyTracksUITestsLaunchTests.swift */; };
+		4D5C8F8428ADCE440001C729 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D5C8F8328ADCE440001C729 /* SpotifyiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		4D5C8F6228ADCC640001C729 /* SpotifyTracksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifyTracksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D5C8F6628ADCC640001C729 /* SpotifyTracksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyTracksUITests.swift; sourceTree = "<group>"; };
 		4D5C8F6828ADCC640001C729 /* SpotifyTracksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyTracksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4D5C8F8028ADCE2A0001C729 /* SpotifyTracks-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpotifyTracks-Bridging-Header.h"; sourceTree = "<group>"; };
+		4D5C8F8328ADCE440001C729 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D5C8F8428ADCE440001C729 /* SpotifyiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +110,8 @@
 				4D5C8F4E28ADCC640001C729 /* Assets.xcassets */,
 				4D5C8F5028ADCC640001C729 /* LaunchScreen.storyboard */,
 				4D5C8F5328ADCC640001C729 /* Info.plist */,
+				4D5C8F8328ADCE440001C729 /* SpotifyiOS.framework */,
+				4D5C8F8028ADCE2A0001C729 /* SpotifyTracks-Bridging-Header.h */,
 			);
 			path = SpotifyTracks;
 			sourceTree = "<group>";
@@ -195,6 +201,7 @@
 				TargetAttributes = {
 					4D5C8F4128ADCC630001C729 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 					4D5C8F5728ADCC640001C729 = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -435,8 +442,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SpotifyTracks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SpotifyTracks/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -452,6 +464,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ios.SpotifyTracks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SpotifyTracks/SpotifyTracks-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,8 +476,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SpotifyTracks",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SpotifyTracks/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -479,6 +498,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ios.SpotifyTracks;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SpotifyTracks/SpotifyTracks-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
