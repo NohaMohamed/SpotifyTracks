@@ -46,7 +46,7 @@ extension LoginViewController: LoginViewProtocol {
     func didRecieveToken() {
         DispatchQueue.main.async {
             let viewController = SearchTableViewController(nibName: "SearchTableViewController", bundle: .main)
-            self.navigationController?.pushViewController(viewController, animated: true)
+            self.view.window?.rootViewController = UINavigationController(rootViewController: viewController)
         }
     }
     

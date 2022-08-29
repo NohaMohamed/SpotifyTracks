@@ -24,5 +24,6 @@ class TrackTableViewCell: UITableViewCell {
         }
         trackName.text = track.trackName
         artistName.text = track.artistName
+        selectionStyle = .none
     }
 }
