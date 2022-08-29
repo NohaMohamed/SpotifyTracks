@@ -6,17 +6,30 @@
 //
 
 import UIKit
-
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    lazy var loginViewController = LoginViewController()
+    lazy var authenticationManager = AuthenticationManager()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
+        window?.windowScene = windowScene
+        window?.rootViewController = loginViewController
+        if authenticationManager.isSignIn {
+        let viewController = SearchTableViewController(nibName: "SearchTableViewController", bundle: .main)
+            
+            window?.rootViewController = UINavigationController(rootViewController: viewController)
+        }else{
+            window?.rootViewController = UINavigationController(rootViewController: loginViewController)
+        }
+        
+        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -47,6 +60,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
 
+    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+        guard let url = URLContexts.first?.url else { return }
+        let parameters = loginViewController.appRemote.authorizationParameters(from: url)
+        if let code = parameters?["code"]{
+            loginViewController.requestToken(code: code) }
+    }
 
 }
-

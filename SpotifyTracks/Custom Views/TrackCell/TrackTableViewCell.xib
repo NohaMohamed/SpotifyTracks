@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrackTableViewCell" rowHeight="191" id="URs-Th-3Gh" customClass="TrackTableViewCell" customModule="SpotifyTracks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="692" height="191"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="URs-Th-3Gh" id="ejg-oM-Rgy">
+                <rect key="frame" x="0.0" y="0.0" width="692" height="191"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Wax-pP-0rV">
+                        <rect key="frame" x="68" y="20" width="44.5" height="151"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktE-AH-j2u">
+                                <rect key="frame" x="0.0" y="0.0" width="44.5" height="130.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" systemColor="systemCyanColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vF4-UM-S3c">
+                                <rect key="frame" x="0.0" y="130.5" width="44.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone.homebutton" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jjy-mU-UaA">
+                        <rect key="frame" x="20" y="75.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="jjy-mU-UaA" secondAttribute="height" id="HJU-SG-Khy"/>
+                            <constraint firstAttribute="width" constant="40" id="R2G-NW-a9G"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jjy-mU-UaA" firstAttribute="leading" secondItem="ejg-oM-Rgy" secondAttribute="leading" constant="20" symbolic="YES" id="6l2-D8-usf"/>
+                    <constraint firstItem="Wax-pP-0rV" firstAttribute="top" secondItem="ejg-oM-Rgy" secondAttribute="top" constant="20" symbolic="YES" id="CPl-7i-ysw"/>
+                    <constraint firstItem="jjy-mU-UaA" firstAttribute="centerY" secondItem="ejg-oM-Rgy" secondAttribute="centerY" id="Pxz-pf-eck"/>
+                    <constraint firstAttribute="bottom" secondItem="Wax-pP-0rV" secondAttribute="bottom" constant="20" symbolic="YES" id="Pzc-gc-bzg"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Wax-pP-0rV" secondAttribute="trailing" id="Ybl-7T-CfL"/>
+                    <constraint firstItem="Wax-pP-0rV" firstAttribute="leading" secondItem="jjy-mU-UaA" secondAttribute="trailing" constant="8" symbolic="YES" id="tUv-9y-ImW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="albumImage" destination="jjy-mU-UaA" id="prP-hg-Wov"/>
+                <outlet property="artistName" destination="ktE-AH-j2u" id="Ud4-C6-fzj"/>
+                <outlet property="trackName" destination="vF4-UM-S3c" id="eWP-Ny-02i"/>
+            </connections>
+            <point key="canvasLocation" x="-95.652173913043484" y="369.97767857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iphone.homebutton" catalog="system" width="108" height="128"/>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
