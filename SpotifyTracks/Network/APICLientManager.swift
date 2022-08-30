@@ -28,7 +28,7 @@ class APIClientManager : APIManagerProtocol {
                     self.authentication.cacheRefreshToken(refreshTokenModel)
                     self.apiClient.send(request: request, compeletion: compeletion)
                 case .failure(_):
-                    break
+                    compeletion(.failure(.canNotDecodeObject))
                 }
             })
         }else{

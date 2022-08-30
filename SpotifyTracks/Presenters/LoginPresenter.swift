@@ -40,7 +40,8 @@ extension LoginPresenter: LoginPresenterToView {
             case .success(let model):
                 self?.service?.cacheToken(model)
                 self?.view?.didRecieveToken()
-            case .failure(_):break
+            case .failure(let error):
+                self?.view?.didRecieveError(error.localizedDescription)
             }
         })
     }

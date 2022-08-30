@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  SpotifyTracks
+
+  Created by Noha Mohamed on 30/08/2022.
+  
+*/
+
+ "error_message_generic" = "Sorry!";
+"error_message_can_not_send_request" = "Sorry! Can't send the request";
+ "error_message_can_not_read_data" = "Sorry! Try again later";
+"error_message_can_not_refresh_token" = "Sorry! Can't refresh token";
