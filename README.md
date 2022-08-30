@@ -6,8 +6,8 @@ SpotifyTracks is search application for your favourite track using spotify APIs.
 MVP (Model for data layer , View for viewcontrollers and XIB, presenters for getting APIs response from services and notify viewcontroller)
 
 ## Used Packages: using "Swift Package manager"
-- [x] Kingfisher : for getting images from URL
-- [x] NetworkingLayer : package I created for http requests
+-  Kingfisher : for getting images from URL
+-  NetworkingLayer : package I created for http requests
 
 ## Features:
 - [x] Login to Spotify and request token
