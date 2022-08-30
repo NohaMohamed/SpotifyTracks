@@ -17,8 +17,8 @@ MVP (Model for data layer , View for viewcontrollers and XIB, presenters for get
 - [x] Navigate to track details
 
 ## Things to improve:
-- [x] Add unit testing for authentication
-- [x] Implement search for artist 
-- [x] Refresh Track Details
-- [x] Add any dependency injection framework
+-  Add unit testing for authentication
+-  Implement search for artist 
+-  Refresh Track Details
+-  Add any dependency injection framework
 
