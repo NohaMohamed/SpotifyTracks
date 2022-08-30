@@ -23,7 +23,7 @@ class SearchResponseMock {
         return   SearchResult.Track.Item(album: nil, artists: nil, availableMarkets: nil, discNumber: nil, durationMs: nil, explicit: nil, externalIds: nil, externalUrls: nil, href: nil, id: nil, isLocal: nil, name: "Adele", popularity: 20, previewUrl: nil, trackNumber: nil, type: nil, uri: nil)
     }
     static func getTrackUIModel() -> TrackUIModel{
-        return  TrackUIModel(trackName: "Easy On Me", artistName: "Adele", popularity: 12,imageUrl: "")
+        return  TrackUIModel(trackName: "Hello", artistName: "Adele", popularity: 12,imageUrl: "")
     }
 }
 

@@ -18,6 +18,7 @@
 		4D01610E28BBD45400DB0F4D /* success_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D01610C28BBD45400DB0F4D /* success_response.json */; };
 		4D01610F28BBD45400DB0F4D /* wrong_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D01610D28BBD45400DB0F4D /* wrong_response.json */; };
 		4D0201BE28BDC4FA005CEC15 /* UINavigationControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0201BD28BDC4FA005CEC15 /* UINavigationControllerMock.swift */; };
+		4D0201C228BDCE94005CEC15 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D0201C428BDCE94005CEC15 /* Localizable.strings */; };
 		4D17BC0528B845910096525F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4D17BC0428B845910096525F /* Kingfisher */; };
 		4D17BC0828B846D60096525F /* APICLientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D17BC0728B846D60096525F /* APICLientManager.swift */; };
 		4D17BC0A28B847150096525F /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D17BC0928B847150096525F /* AuthenticationManager.swift */; };
@@ -80,6 +81,7 @@
 		4D01610C28BBD45400DB0F4D /* success_response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success_response.json; sourceTree = "<group>"; };
 		4D01610D28BBD45400DB0F4D /* wrong_response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wrong_response.json; sourceTree = "<group>"; };
 		4D0201BD28BDC4FA005CEC15 /* UINavigationControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerMock.swift; sourceTree = "<group>"; };
+		4D0201C328BDCE94005CEC15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4D17BC0728B846D60096525F /* APICLientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICLientManager.swift; sourceTree = "<group>"; };
 		4D17BC0928B847150096525F /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		4D1C034B28BCDDB5006DA69B /* TrackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackService.swift; sourceTree = "<group>"; };
@@ -163,6 +165,14 @@
 				4D0201BD28BDC4FA005CEC15 /* UINavigationControllerMock.swift */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		4D0201BF28BDCE7C005CEC15 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				4D0201C428BDCE94005CEC15 /* Localizable.strings */,
+			);
+			path = Localization;
 			sourceTree = "<group>";
 		};
 		4D17BC0628B846BC0096525F /* Network */ = {
@@ -251,6 +261,7 @@
 			children = (
 				4D1C034A28BCDB69006DA69B /* Application */,
 				4D17BC0628B846BC0096525F /* Network */,
+				4D0201BF28BDCE7C005CEC15 /* Localization */,
 				4D9498CA28B33171009D2EF1 /* Presenters */,
 				4D9498C928B33074009D2EF1 /* Model */,
 				4D9498C628B3300B009D2EF1 /* Services */,
@@ -447,6 +458,7 @@
 				4D5C8F5228ADCC640001C729 /* LaunchScreen.storyboard in Resources */,
 				4DE13B2228B3D2B7007FF52A /* LoginViewController.xib in Resources */,
 				4D5C8F4F28ADCC640001C729 /* Assets.xcassets in Resources */,
+				4D0201C228BDCE94005CEC15 /* Localizable.strings in Resources */,
 				4D94987F28B3061E009D2EF1 /* TrackTableViewCell.xib in Resources */,
 				4D94987228B305F1009D2EF1 /* SearchTableViewController.xib in Resources */,
 				4D0160FD28BBCA6100DB0F4D /* TrackDetailsViewController.xib in Resources */,
@@ -540,6 +552,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		4D0201C428BDCE94005CEC15 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D0201C328BDCE94005CEC15 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		4D5C8F5028ADCC640001C729 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

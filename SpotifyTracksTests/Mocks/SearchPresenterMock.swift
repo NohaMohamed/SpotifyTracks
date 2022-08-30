@@ -8,6 +8,7 @@
 import Foundation
 @testable import SpotifyTracks
 class SearchPresenterMock: SearchPresenterToViewProtocol{
+    
 
     var isLoadingNextPage: Bool = false
     
@@ -30,6 +31,10 @@ class SearchPresenterMock: SearchPresenterToViewProtocol{
     func search(_ text: String) {
         isSearchCalled = true
         return
+    }
+    
+    func getTrackDetails(at row: Int) -> SearchResult.Track.Item? {
+        return SearchResponseMock.getTrack()
     }
     
 }
