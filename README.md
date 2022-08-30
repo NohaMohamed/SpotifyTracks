@@ -2,7 +2,7 @@
 
 SpotifyTracks is search application for your favourite track using spotify APIs.
 
-Architecture
+## Architecture
 MVP (Model for data layer , View for viewcontrollers and XIB, presenters for getting APIs response from services and notify viewcontroller)
 
 Used Packages: using "Swift Package manager"
