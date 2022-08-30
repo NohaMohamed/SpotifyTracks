@@ -9,12 +9,15 @@ import Foundation
 import UIKit
 
 extension SearchTableViewController {
+    
     func setSearchBarView() {
         searchController.searchBar.placeholder = "Type your search here"
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchResultsUpdater = self
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
+        searchController.searchBar.searchBarStyle = .minimal
+        UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).defaultTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         definesPresentationContext = true
     }
     func showError(message: String){
@@ -49,7 +52,5 @@ extension SearchTableViewController{
              presenter.loadNextPage()
          }
     }
-
 }
-
 

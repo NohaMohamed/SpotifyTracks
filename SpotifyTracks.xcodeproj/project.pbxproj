@@ -17,6 +17,7 @@
 		4D01610B28BBD31D00DB0F4D /* SearchPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D01610928BBD31D00DB0F4D /* SearchPresenterTests.swift */; };
 		4D01610E28BBD45400DB0F4D /* success_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D01610C28BBD45400DB0F4D /* success_response.json */; };
 		4D01610F28BBD45400DB0F4D /* wrong_response.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D01610D28BBD45400DB0F4D /* wrong_response.json */; };
+		4D0201BE28BDC4FA005CEC15 /* UINavigationControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0201BD28BDC4FA005CEC15 /* UINavigationControllerMock.swift */; };
 		4D17BC0528B845910096525F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 4D17BC0428B845910096525F /* Kingfisher */; };
 		4D17BC0828B846D60096525F /* APICLientManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D17BC0728B846D60096525F /* APICLientManager.swift */; };
 		4D17BC0A28B847150096525F /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D17BC0928B847150096525F /* AuthenticationManager.swift */; };
@@ -78,6 +79,7 @@
 		4D01610928BBD31D00DB0F4D /* SearchPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchPresenterTests.swift; sourceTree = "<group>"; };
 		4D01610C28BBD45400DB0F4D /* success_response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success_response.json; sourceTree = "<group>"; };
 		4D01610D28BBD45400DB0F4D /* wrong_response.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wrong_response.json; sourceTree = "<group>"; };
+		4D0201BD28BDC4FA005CEC15 /* UINavigationControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationControllerMock.swift; sourceTree = "<group>"; };
 		4D17BC0728B846D60096525F /* APICLientManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICLientManager.swift; sourceTree = "<group>"; };
 		4D17BC0928B847150096525F /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		4D1C034B28BCDDB5006DA69B /* TrackService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackService.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			children = (
 				4D01610828BBD31D00DB0F4D /* SearchViewControllerTests.swift */,
 				4D01610928BBD31D00DB0F4D /* SearchPresenterTests.swift */,
+				4D0201BD28BDC4FA005CEC15 /* UINavigationControllerMock.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -506,6 +509,7 @@
 				4D01610A28BBD31D00DB0F4D /* SearchViewControllerTests.swift in Sources */,
 				4D01610328BBCE6D00DB0F4D /* MockAPIClient.swift in Sources */,
 				4D01610B28BBD31D00DB0F4D /* SearchPresenterTests.swift in Sources */,
+				4D0201BE28BDC4FA005CEC15 /* UINavigationControllerMock.swift in Sources */,
 				4D01610528BBCE6D00DB0F4D /* SearchServiceMock.swift in Sources */,
 				4D01610628BBCE6D00DB0F4D /* SearchPresenterMock.swift in Sources */,
 			);

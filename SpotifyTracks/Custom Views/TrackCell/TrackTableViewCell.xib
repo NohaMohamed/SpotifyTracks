@@ -28,7 +28,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vF4-UM-S3c">
                                 <rect key="frame" x="0.0" y="130.5" width="44.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -50,6 +50,7 @@
                     <constraint firstItem="Wax-pP-0rV" firstAttribute="leading" secondItem="jjy-mU-UaA" secondAttribute="trailing" constant="8" symbolic="YES" id="tUv-9y-ImW"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="albumImage" destination="jjy-mU-UaA" id="prP-hg-Wov"/>
                 <outlet property="artistName" destination="ktE-AH-j2u" id="Ud4-C6-fzj"/>

@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,32 +17,47 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKh-Lb-EBQ">
-                    <rect key="frame" x="103.5" y="428" width="207" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="CVQ-0K-lGQ"/>
-                    </constraints>
-                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                    <state key="normal" image="Spotify_Logo"/>
-                    <connections>
-                        <action selector="loginToSpotify:" destination="-1" eventType="touchUpInside" id="7nb-tH-g11"/>
-                    </connections>
-                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="Kv2-Xf-xKQ">
+                    <rect key="frame" x="-76.5" y="341" width="567" height="224.5"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Spotify_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="MvV-tm-y8i">
+                            <rect key="frame" x="0.0" y="0.0" width="567" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="W7k-41-QTC"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login to connect" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKC-XV-igs">
+                            <rect key="frame" x="216" y="127" width="135.5" height="20.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKh-Lb-EBQ">
+                            <rect key="frame" x="258.5" y="174.5" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="CVQ-0K-lGQ"/>
+                                <constraint firstAttribute="width" secondItem="LKh-Lb-EBQ" secondAttribute="height" id="XaV-BI-vIt"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="login"/>
+                            <connections>
+                                <action selector="loginToSpotify:" destination="-1" eventType="touchUpInside" id="7nb-tH-g11"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="LKh-Lb-EBQ" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="jxs-FC-pfG"/>
-                <constraint firstItem="LKh-Lb-EBQ" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="pYU-n0-dvC"/>
-                <constraint firstItem="LKh-Lb-EBQ" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="x5x-in-WvW"/>
+                <constraint firstItem="Kv2-Xf-xKQ" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="0lC-Vb-17x"/>
+                <constraint firstItem="Kv2-Xf-xKQ" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="hVC-H6-oT5"/>
             </constraints>
             <point key="canvasLocation" x="139" y="46"/>
         </view>
     </objects>
     <resources>
         <image name="Spotify_Logo" width="567" height="170"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="login" width="512" height="512"/>
     </resources>
 </document>
